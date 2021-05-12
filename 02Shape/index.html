@@ -10,12 +10,52 @@
   <body>
     <a-scene background="color: #333333">
       <a-box id="myBox"
-        width="3"
-        height="2"
+        width="4"
+        height="1"
         depth="1"
-        color="#BBAA33" 
+        scale="1 2 1"
+        color="#94d0cc" 
+        position="0 1.5 -2"
         shadow>
       </a-box>
+        <a-torus-knot
+          color="#f29191" 
+          arc="180" 
+          p="1" 
+          q="1" 
+          radius="3" 
+          radius-tubular="0.1"
+          position="4 1 -5"
+          shadow>
+        </a-torus-knot>
+          <a-plane 
+            color="white" 
+            height="50" 
+            width="50"
+            position="0 1 0"
+            rotation="-90 0 0"
+            shadow>
+          </a-plane>
+            <a-dodecahedron 
+              color="#eec4c4" 
+              radius="2"
+              position="-5 2.5 -4"
+              shadow>
+            </a-dodecahedron>
+              <a-cone 
+                color="#d1d9d9" 
+                radius-bottom="2" 
+                radius-top="2"
+                position="-3 1 4"
+                shadow>
+              </a-cone>
+                <a-text 
+                value="What am I even doing?"
+                text.color="white"
+                text.height="1"
+                position="-1 1.75 -1.5"
+                shadow>
+                </a-text>
     </a-scene>
   </body>
 </html>
